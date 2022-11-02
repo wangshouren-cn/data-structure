@@ -1,3 +1,1 @@
-export function fn(): number {
-    return 1;
-}
+export * from "./ArrayStack"

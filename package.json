@@ -1,12 +1,14 @@
 {
   "name": "@wsr/data-structure",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Javascript数据结构",
   "main": "dist/indnex.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "vitest --globals"
+    "test": "vitest --globals",
+    "prepublish": "npm run build",
+    "publish": "git add . && git commit && npm publish"
   },
   "author": "wangshouren",
   "license": "ISC",
@@ -27,5 +29,8 @@
     "typescript": "*",
     "vitest": "^0.24.5"
   },
-  "packageManager": "pnpm@7.12.2"
+  "packageManager": "pnpm@7.12.2",
+  "files": [
+    "dist"
+  ]
 }
