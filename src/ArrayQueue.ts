@@ -1,20 +1,20 @@
-export class ArrayStack<T> {
+export class ArrayQueue<T> {
   private readonly _array: T[];
 
   constructor(initialElments: T[] = []) {
     this._array = initialElments;
   }
 
-  push(...x: T[]): void {
+  enqueue(...x: T[]): void {
     this._array.push(...x);
   }
 
-  pop(): T | undefined {
-    return this._array.pop();
+  dequeue(): T | undefined {
+    return this._array.shift();
   }
 
-  peek(): T | undefined {
-    return this._array[this._array.length - 1];
+  getFront(): T | undefined {
+    return this._array[0];
   }
 
   getSize(): number {

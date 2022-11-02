@@ -1,14 +1,14 @@
 {
-  "name": "@wsr/data-structure",
-  "version": "0.0.0",
+  "name": "@wangshouren/data-structure",
+  "version": "0.0.1",
   "description": "Javascript数据结构",
-  "main": "dist/indnex.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "vitest --globals",
     "prepublish": "npm run build",
-    "publish": "git add . && git commit && npm publish"
+    "format": "prettier --write ."
   },
   "author": "wangshouren",
   "license": "ISC",

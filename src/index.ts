@@ -1,1 +1,2 @@
-export * from "./ArrayStack"
+export * from "./ArrayStack";
+export * from "./ArrayQueue";
